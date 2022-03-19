@@ -31,7 +31,8 @@ const enteredUserAge = ageInputRef.current.value
       return;
     }
     props.onAddUser(enteredName, enteredUserAge);
-
+    nameInputRef.current.value = ''
+    ageInputRef.current.value = ''
   };
 
 
